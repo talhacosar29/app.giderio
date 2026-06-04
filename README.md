@@ -19,6 +19,7 @@ GitHub Pages için statik landing site.
 | `download.html` | App Store / Google Play yönlendirme |
 | `contact.html` | İletişim |
 | `privacy.html` | Gizlilik politikası |
+| `account-deletion.html` | Hesap / veri silme (Play Console URL) |
 
 ## Mağaza linkleri
 

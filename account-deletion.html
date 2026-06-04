@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Giderio hesap ve veri silme — bulut hesabınızı veya cihazdaki kayıtları nasıl kaldırırsınız." />
+  <meta name="theme-color" content="#0b1220" />
+  <title>Hesap ve Veri Silme — Giderio</title>
+  <link rel="icon" href="assets/logo.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="bg-glow" aria-hidden="true"></div>
+  <div class="page">
+    <header class="site-header is-scrolled">
+      <div class="container header-inner">
+        <a class="brand" href="index.html">
+          <img src="assets/logo.png" alt="Giderio" width="40" height="40" />
+          Giderio
+        </a>
+        <nav class="nav-desktop" aria-label="Ana menü">
+          <a href="index.html">Ana sayfa</a>
+          <a href="contact.html">İletişim</a>
+          <a href="privacy.html">Gizlilik</a>
+        </nav>
+        <div class="nav-actions">
+          <a class="btn btn-primary" href="download.html">İndir</a>
+          <button class="menu-toggle" type="button" aria-label="Menü" aria-expanded="false">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+          </button>
+        </div>
+      </div>
+      <nav class="mobile-nav" aria-label="Mobil menü">
+        <a href="index.html">Ana sayfa</a>
+        <a href="download.html">İndir</a>
+        <a href="privacy.html">Gizlilik</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="subpage-hero">
+        <div class="container">
+          <h1>Hesap ve veri silme</h1>
+          <p>
+            Giderio (com.talhacosar.giderio) — Google Play veri güvenliği gereksinimleri için
+            hesap ve veri silme yöntemleri.
+          </p>
+        </div>
+      </section>
+
+      <section style="padding-top: 0; padding-bottom: 4rem;">
+        <div class="container">
+          <article class="content-card">
+            <h2 id="hesap-silme">Bulut hesabını silme</h2>
+            <p>
+              Oturum açmış bir <strong>bulut hesabınız</strong> varsa hesabınızı ve ilişkili bulut
+              verilerinizi uygulama içinden kalıcı olarak silebilirsiniz:
+            </p>
+            <ol>
+              <li>Giderio uygulamasını açın ve bulut hesabınızla giriş yapın.</li>
+              <li><strong>Ayarlar → Hesap</strong> bölümüne gidin.</li>
+              <li><strong>Hesabı sil</strong> seçeneğine dokunun.</li>
+              <li>Uyarıları okuyun, onay kutusunu işaretleyin ve kimliğinizi doğrulayın (e-posta/şifre veya Google).</li>
+              <li>Silme işlemini onaylayın.</li>
+            </ol>
+            <p><strong>Silinen veriler (bulut):</strong></p>
+            <ul>
+              <li>Firebase Authentication hesabınız (e-posta / Google girişi)</li>
+              <li>Firestore’daki kişisel bulut defteri ve senkronize kayıtlarınız</li>
+              <li>Firebase Storage’daki yüklediğiniz fiş görselleri</li>
+              <li>Profil bilgileriniz (görünen ad, avatar — varsa)</li>
+              <li>FCM bildirim token’ı ve cihaz kayıtları</li>
+            </ul>
+            <p>
+              Paylaşımlı bir firmada <strong>tek üye</strong> iseniz ve hesabınızı silerseniz,
+              yalnızca sizin hesabınıza bağlı veriler kaldırılır; diğer üyelerin defteri etkilenmez.
+              Defter sahibi iseniz önce üyelik/devretme kuralları uygulama içinde gösterilir.
+            </p>
+            <p>
+              <strong>Saklama:</strong> Silme işlemi tamamlandıktan sonra veriler makul süre içinde
+              sunuculardan kaldırılır; yedek ve günlük sistemlerinde kısa süreli teknik kopyalar
+              kalabilir (standart Firebase/Google süreçleri).
+            </p>
+
+            <h2 id="veri-silme">Hesabı silmeden veri silme</h2>
+            <p>
+              Bulut hesabınızı kapatmadan yalnızca <strong>cihazınızdaki</strong> veya
+              <strong>belirli kayıtları</strong> kaldırmak için:
+            </p>
+            <ul>
+              <li>
+                <strong>Yerel mod (hesap yok):</strong> Kayıtları uygulama içinden tek tek silin
+                veya uygulamayı cihazdan kaldırın — tüm yerel veritabanı ve fiş dosyaları cihazdan gider.
+              </li>
+              <li>
+                <strong>Bulut + yerel:</strong> İlgili gider, hesap, dönem veya defter kayıtlarını
+                uygulama içinden silin; bulut senkronu açıksa değişiklik sunucuya yansır.
+              </li>
+              <li>
+                <strong>Dışa aktarma:</strong> PDF/CSV dışa aktarma Ayarlar’dan yapılabilir; ardından
+                kayıtları silebilirsiniz.
+              </li>
+            </ul>
+            <p>
+              Uygulama içinden yapamadığınız özel bir silme talebi için aşağıdaki e-posta adresine
+              hesabınıza bağlı e-posta ile yazın; kimlik doğrulaması sonrası talebiniz işlenir.
+            </p>
+
+            <h2>E-posta ile talep</h2>
+            <p>
+              Uygulamaya erişemiyorsanız veya hesap silme işlemi başarısız olursa:
+            </p>
+            <p>
+              <a href="mailto:dev.talhacosar@gmail.com?subject=Giderio%20hesap%20silme%20talebi">dev.talhacosar@gmail.com</a>
+            </p>
+            <p>Mesajınızda şunları belirtin:</p>
+            <ul>
+              <li>Kayıtlı e-posta adresiniz (veya Google hesabınız)</li>
+              <li>“Hesabımın ve bulut verilerimin silinmesini istiyorum” ifadesi</li>
+              <li>İsteğe bağlı: silinmesini istediğiniz belirli veri türü (hesabı silmeden)</li>
+            </ul>
+            <p>Talepler genellikle <strong>30 gün içinde</strong> yanıtlanır.</p>
+
+            <h2>İlgili bağlantılar</h2>
+            <p>
+              <a href="privacy.html">Gizlilik politikası</a> ·
+              <a href="contact.html">İletişim</a>
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-bottom" style="border: none; padding-top: 0;">
+          <span>© <span id="year"></span> Giderio</span>
+          <span><a href="index.html">Ana sayfa</a> · <a href="privacy.html">Gizlilik</a></span>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>
