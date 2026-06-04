@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Giderio uygulamasını App Store ve Google Play'den indirin." />
+  <meta name="theme-color" content="#0b1220" />
+  <title>İndir — Giderio</title>
+  <link rel="icon" href="assets/logo.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="bg-glow" aria-hidden="true"></div>
+  <div class="page">
+    <header class="site-header is-scrolled">
+      <div class="container header-inner">
+        <a class="brand" href="index.html">
+          <img src="assets/logo.png" alt="Giderio" width="40" height="40" />
+          Giderio
+        </a>
+        <nav class="nav-desktop" aria-label="Ana menü">
+          <a href="index.html#ozellikler">Özellikler</a>
+          <a href="contact.html">İletişim</a>
+          <a href="download.html" class="is-active">İndir</a>
+        </nav>
+        <div class="nav-actions">
+          <a class="btn btn-ghost" href="privacy.html">Gizlilik</a>
+          <button class="menu-toggle" type="button" aria-label="Menü" aria-expanded="false">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+          </button>
+        </div>
+      </div>
+      <nav class="mobile-nav" aria-label="Mobil menü">
+        <a href="index.html">Ana sayfa</a>
+        <a href="contact.html">İletişim</a>
+        <a href="privacy.html">Gizlilik</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="subpage-hero">
+        <div class="container">
+          <h1>Giderio’yu indirin</h1>
+          <p>iPhone ve Android cihazlarınızda ortak gider ve finans takibine hemen başlayın.</p>
+        </div>
+      </section>
+
+      <section style="padding-top: 0;">
+        <div class="container">
+          <div class="download-grid">
+            <article class="store-card">
+              <div class="store-icon" aria-hidden="true">🍎</div>
+              <h3>App Store</h3>
+              <p>iPhone ve iPad için Giderio. iOS 15 ve üzeri önerilir.</p>
+              <!-- Yayın sonrası gerçek App Store URL'si ile değiştirin -->
+              <a class="store-badge" href="https://apps.apple.com/app/giderio/id0000000000" rel="noopener noreferrer" target="_blank">
+                App Store’da aç
+              </a>
+            </article>
+            <article class="store-card">
+              <div class="store-icon" aria-hidden="true">▶</div>
+              <h3>Google Play</h3>
+              <p>Android telefon ve tabletler. Paket: com.talhacosar.giderio</p>
+              <a class="store-badge" href="https://play.google.com/store/apps/details?id=com.talhacosar.giderio" rel="noopener noreferrer" target="_blank">
+                Google Play’de aç
+              </a>
+            </article>
+          </div>
+
+          <p class="qr-hint">
+            Mağaza sayfası henüz yayında değilse veya link çalışmıyorsa
+            <a href="mailto:dev.talhacosar@gmail.com" style="color: inherit; font-weight: 700;">dev.talhacosar@gmail.com</a>
+            adresinden test sürümü veya erken erişim talep edebilirsiniz.
+          </p>
+
+          <div class="content-card" style="margin-top: 2rem;">
+            <h2>Sistem gereksinimleri</h2>
+            <ul>
+              <li><strong>iOS:</strong> 15.0+, iPhone / iPad</li>
+              <li><strong>Android:</strong> API 23+ (Android 6.0+)</li>
+              <li><strong>Bulut:</strong> İsteğe bağlı; hesap ile çok cihaz senkron</li>
+              <li><strong>Dil:</strong> Türkçe arayüz</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-bottom" style="border: none; padding-top: 0;">
+          <span>© <span id="year"></span> Giderio</span>
+          <span><a href="index.html">Ana sayfa</a> · <a href="contact.html">İletişim</a></span>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>

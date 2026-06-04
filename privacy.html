@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Giderio gizlilik politikası — veri toplama, kullanım ve haklarınız." />
+  <meta name="theme-color" content="#0b1220" />
+  <title>Gizlilik Politikası — Giderio</title>
+  <link rel="icon" href="assets/logo.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="bg-glow" aria-hidden="true"></div>
+  <div class="page">
+    <header class="site-header is-scrolled">
+      <div class="container header-inner">
+        <a class="brand" href="index.html">
+          <img src="assets/logo.png" alt="Giderio" width="40" height="40" />
+          Giderio
+        </a>
+        <nav class="nav-desktop" aria-label="Ana menü">
+          <a href="index.html">Ana sayfa</a>
+          <a href="contact.html">İletişim</a>
+          <a href="privacy.html" class="is-active">Gizlilik</a>
+        </nav>
+        <div class="nav-actions">
+          <a class="btn btn-primary" href="download.html">İndir</a>
+          <button class="menu-toggle" type="button" aria-label="Menü" aria-expanded="false">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+          </button>
+        </div>
+      </div>
+      <nav class="mobile-nav" aria-label="Mobil menü">
+        <a href="index.html">Ana sayfa</a>
+        <a href="download.html">İndir</a>
+        <a href="contact.html">İletişim</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="subpage-hero">
+        <div class="container">
+          <h1>Gizlilik Politikası</h1>
+          <p>Son güncelleme: 31 Mayıs 2026 · Giderio mobil uygulaması (com.talhacosar.giderio)</p>
+        </div>
+      </section>
+
+      <section style="padding-top: 0; padding-bottom: 4rem;">
+        <div class="container">
+          <article class="content-card">
+            <p>
+              Bu politika, <strong>Giderio</strong> uygulamasını kullanırken kişisel verilerinizin nasıl
+              işlendiğini açıklar. Uygulamayı kullanarak bu politikayı okuduğunuzu kabul etmiş sayılırsınız.
+            </p>
+
+            <h2>1. Veri sorumlusu</h2>
+            <p>
+              Giderio uygulamasının geliştiricisi ve veri sorumlusu:<br />
+              <strong>Talha Coşar</strong><br />
+              E-posta: <a href="mailto:dev.talhacosar@gmail.com">dev.talhacosar@gmail.com</a>
+            </p>
+
+            <h2>2. Toplanan veriler</h2>
+            <p>Uygulama kapsamında aşağıdaki veri türleri işlenebilir:</p>
+            <ul>
+              <li><strong>Hesap bilgileri (bulut):</strong> E-posta, görünen ad, kullanıcı kimliği (Firebase Authentication).</li>
+              <li><strong>Finansal kayıtlar:</strong> Gider, gelir, borç, cari, hesap ve ortak defter verileri — cihazda ve isteğe bağlı olarak bulutta.</li>
+              <li><strong>Belgeler:</strong> Fiş ve ek görseller (yerel depolama ve isteğe bağlı Firebase Storage).</li>
+              <li><strong>Cihaz verileri:</strong> Bildirim token’ı (FCM), uygulama sürümü, çökme günlükleri (varsa analitik entegrasyonu).</li>
+              <li><strong>Güvenlik:</strong> PIN / biyometrik kilit yalnızca cihazınızda doğrulanır; PIN sunucuya gönderilmez.</li>
+            </ul>
+
+            <h2>3. Verilerin kullanım amaçları</h2>
+            <ul>
+              <li>Uygulama işlevlerini sunmak (kayıt, senkron, rapor, bildirim)</li>
+              <li>Paylaşımlı defterlerde üyelik ve davet yönetimi</li>
+              <li>Hesap güvenliği ve hizmet sürekliliği</li>
+              <li>Yasal yükümlülüklerin yerine getirilmesi</li>
+              <li>Destek taleplerine yanıt (iletişim e-postanız üzerinden)</li>
+            </ul>
+
+            <h2>4. Yerel ve bulut depolama</h2>
+            <p>
+              <strong>Yerel mod:</strong> Verileriniz öncelikle cihazınızda saklanır; internet olmadan da kullanılabilir.
+            </p>
+            <p>
+              <strong>Bulut mod (isteğe bağlı):</strong> Oturum açtığınızda veriler Google Firebase
+              (Firestore, Storage, Authentication, Cloud Functions, Cloud Messaging) altyapısında,
+              şifreli bağlantı (HTTPS/TLS) üzerinden senkronize edilebilir. Bulut hizmetleri
+              <a href="https://firebase.google.com/support/privacy" rel="noopener noreferrer" target="_blank">Google Firebase Gizlilik</a>
+              politikasına tabidir.
+            </p>
+
+            <h2>5. Üçüncü taraflar</h2>
+            <ul>
+              <li>Google Firebase (kimlik doğrulama, veritabanı, depolama, bildirim)</li>
+              <li>Google Sign-In (isteğe bağlı giriş yöntemi)</li>
+              <li>Apple / Google uygulama mağazaları (dağıtım ve güncelleme)</li>
+            </ul>
+            <p>Verileriniz reklam profilleme amacıyla üçüncü taraflara satılmaz.</p>
+
+            <h2>6. Paylaşımlı defterler</h2>
+            <p>
+              Bir firmaya veya ortak gruba davet edildiğinizde, rolünüze göre defter verileriniz
+              diğer üyeler tarafından görülebilir. Davet kodu veya kullanıcı kimliği yalnızca
+              sizin paylaştığınız kişilerle kullanılmalıdır.
+            </p>
+
+            <h2>7. Saklama süresi</h2>
+            <p>
+              Yerel veriler uygulamayı silene veya verileri temizleyene kadar cihazınızda kalır.
+              Bulut verileri hesabınız aktif olduğu sürece saklanır; hesap silme talebinde makul süre
+              içinde silinir.
+            </p>
+
+            <h2>8. Haklarınız (KVKK / GDPR)</h2>
+            <p>İlgili mevzuat kapsamında aşağıdaki haklara sahip olabilirsiniz:</p>
+            <ul>
+              <li>Verilerinize erişim ve düzeltme</li>
+              <li>Silme (“unutulma”) talebi</li>
+              <li>İşlemeyi kısıtlama veya itiraz</li>
+              <li>Veri taşınabilirliği (uygun formatta dışa aktarma — uygulama içi PDF/CSV)</li>
+            </ul>
+            <p>
+              Talepleriniz için
+              <a href="mailto:dev.talhacosar@gmail.com">dev.talhacosar@gmail.com</a>
+              adresine yazabilirsiniz.
+            </p>
+
+            <h2>9. Güvenlik</h2>
+            <p>
+              Verilerinizi korumak için şifreli iletişim, erişim kuralları (Firestore Security Rules)
+              ve cihaz düzeyinde PIN / biyometrik kilit gibi önlemler uygulanır. Hiçbir sistem
+              %100 güvenli garanti edilemez; güçlü bir cihaz parolası kullanmanız önerilir.
+            </p>
+
+            <h2>10. Çocuklar</h2>
+            <p>
+              Giderio 13 yaş altı çocuklara yönelik değildir. Bilerek bu yaş grubundan veri toplanmaz.
+            </p>
+
+            <h2>11. Politika değişiklikleri</h2>
+            <p>
+              Bu sayfa güncellenebilir. Önemli değişiklikler uygulama veya e-posta ile bildirilebilir.
+              Güncel metin her zaman bu adreste yayımlanır.
+            </p>
+
+            <h2>12. İletişim</h2>
+            <p>
+              Gizlilik ile ilgili sorular:
+              <a href="mailto:dev.talhacosar@gmail.com">dev.talhacosar@gmail.com</a><br />
+              <a href="contact.html">İletişim sayfası</a>
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-bottom" style="border: none; padding-top: 0;">
+          <span>© <span id="year"></span> Giderio</span>
+          <span><a href="index.html">Ana sayfa</a> · <a href="download.html">İndir</a></span>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>
