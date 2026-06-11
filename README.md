@@ -21,6 +21,7 @@ GitHub Pages için statik landing site.
 | `privacy.html` | Gizlilik politikası |
 | `terms.html` | Kullanım koşulları |
 | `account-deletion.html` | Hesap / veri silme (Play Console URL) |
+| `app-ads.txt` | AdMob doğrulama (mağaza geliştirici sitesi kökünde) |
 
 ## Mağaza linkleri
 
